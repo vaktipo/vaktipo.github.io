@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Maksym Shevchenko</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/4540790ba1.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="header">
+	<div class="container">
+		<nav>
+			<img src="images/logo.png" class="logo">
+			<ul id="sidemenu">
+				<li><a href="#header">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#services">Strengths</a></li>
+				<li><a href="#portfolio">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+			</ul>
+			<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+		</nav>
+		<div class="header-text">
+			<h1>Hello, I am<br><span>Maksym Shevchenko</span></h1>
+			<p>A third year Computer Science student</p>
+		</div>
+	</div>
+</div>
+<!-- ---------about-------- -->
+<div id="about">
+	<div class="container">
+		<div class="row">
+			<div class="about-col-1">
+				<img src="images/user.png">
+			</div>
+			<div class="about-col-2">
+				<h1 class="sub-title">About Me</h1>
+				<p>
+					I’m a 19-year-old, 3rd year Computer Science
+					student with a deep passion for video games.
+					But for me, it has never just been about playing:
+					I have always been fascinated by how games
+					can make people feel so many different emotions and how each player experiences them
+					in their own way. As I grew up, this curiosity
+					pushed me to learn more about game development, and now I am working to build my skills to
+					one day create games that leave a lasting impact on others.
+				</p>
+				<div class="tab-titles">
+					<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+					<p class="tab-links" onclick="opentab('experience')">Experience</p>
+					<p class="tab-links" onclick="opentab('education')">Education</p>
+				</div>
+				<div class="tab-contents active-tab" id="skills">
+					<ul>
+						<li><span>Unity/Godot</span><br>Comfortable using both of these game engines.</li>
+						<li><span>Problem-Solving</span><br>Able to analyze challenges and find effective solutions.</li>
+						<li><span>Team Leadership</span><br>Enjoy working collaboratively while also guiding and motivating others to achieve shared goals.</li>
+						<li><span>Multilingualism</span><br>English (C1), Ukrainian (Native), Russian (Native), Polish (B1). </li>
+					</ul>
+				</div>
+				<div class="tab-contents"id="experience">
+					<ul>
+						<li><span>No experience</span><br>I have not worked in any IT-related company just yet, but I am looking forward to start any time soon.
+						Maybe you are the company I am looking for? Send me an email below or just call me =)</li>
+					</ul>
+				</div>
+				<div class="tab-contents" id="education">
+					<ul>
+						<li><span>Oct 2022 - Present</span><br>University of Lodz faculty of Computer Science | Lodz, Poland</li>
+						<li><span>2019-2021</span><br>Computer Academy “STEP” | Odessa, Ukraine</li>
+						<li><span>2015-2017</span><br>Computer Courses in training center "SHKG" | Odessa, Ukraine</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- ---------what I usually do------------- -->
+
+<div id="services">
+	<div class="container">
+		<h1 class="sub-title">What I like to do</h1>
+		<div class="services-list">
+			<div>
+				<i class="fa-solid fa-square-binary"></i>
+				<h2>Gameplay/AI Programming</h2>
+				<p>Passionate about developing engaging gameplay mechanics and intelligent AI systems that enhance player experience.</p>
+				<!--<a href="">Learn more</a>-->
+			</div>
+			<div>
+				<i class="fa-solid fa-puzzle-piece"></i>
+				<h2>Level Design</h2>
+				<p>Designing immersive and well-balanced levels that provide a fun and challenging experience for players.</p>
+				<!--<a href="">Learn more</a>-->
+			</div>
+			<div>
+				<i class="fa-solid fa-bug"></i>
+				<h2>Game Testing/ Quality Assurance</h2>
+				<p>Ensuring smooth gameplay by finding bugs, improving mechanics, and optimizing player experience through careful testing.</p>
+				<!--<a href="">Learn more</a>-->
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- -------portfolio------- -->
+
+<div id="portfolio">
+	<div class="container">
+		<h1 class="sub-title">My Work</h1>
+		<div class="work-list">
+			<div class="work">
+				<img src="images/work-1.png">
+				<div class="layer">
+					<h3>Flower Delivery App</h3>
+					<p>
+						Working on a fully functional application that allows users to order flowers for a specific date,
+						access special deals, and customize their orders. The project focuses on improving the user experience and streamlining the ordering process
+					</p>
+					<a href="https://github.com/vaktipo/FlowerApp"><i class="fas fa-external-link-alt"></i></a>
+				</div>
+			</div>
+			<div class="work">
+				<img src="images/work-2.png">
+				<div class="layer">
+					<h3>RPG Style Smarter AI</h3>
+					<p>
+						Developing a game in Godot with AI-driven enemies using pathfinding and a state machine to gain
+						a better understanding of AI in video games.
+					</p>
+					<!--<a href=""><i class="fas fa-external-link-alt"></i></a>-->
+				</div>
+			</div>
+			<div class="work">
+				<img src="images/work-3.png">
+				<div class="layer">
+					<h3>Platformer on Unity</h3>
+					<p>Finished a project on Unity about creating a platformer game with lots of functionality and mechanics. Also my first-time self-drawn sprite sheet.</p>
+					<!--<a href=""><i class="fas fa-external-link-alt"></i></a>-->
+				</div>
+			</div>
+		</div>
+		<!--<a href="https://github.com/vaktipo" class="btn">See more</a>-->
+	</div>
+</div>
+
+<!-- --------contact-------- -->
+
+<div id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="contact-left">
+				<h1 class="sub-title">Contact Me</h1>
+				<p><i class="fa-solid fa-envelope"></i> maksheva15@gmail.com</p>
+				<p><i class="fa-solid fa-square-phone"></i> +48 575 198 356</p>
+				<div class="social-icons">
+					<!--<a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+					<a href="https://dribbble.com/"><i class="fa-brands fa-square-dribbble"></i></a>-->
+					<a href="https://github.com/vaktipo"><i class="fa-brands fa-square-github"></i></a>
+				</div>
+				<a href="images/Maksym_Shevchenko_CV.pdf" download class="btn btn2">Download CV</a>
+			</div>
+			<div class="contact-right">
+				<p style="color:tomato">SECTION IS UNDER DEVELOPMENT</p>
+				<form>
+					<input type="text" name="Name" placeholder="Your Name" required>
+					<input type="email" name="email" placeholder="Your Email" required>
+					<textarea name="Message" rows="6" placeholder="Your Message "></textarea>
+					<button type="submit" class="btn btn2">Submit</button>
+				</form>
+				<p class="msg"></p>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<p>Copyright © Maksym. Made by Maksym Shevchenko</p>
+	</div>
+</div>
+
+<script>
+	
+	var tablinks = document.getElementsByClassName("tab-links");
+	var tabcontents = document.getElementsByClassName("tab-contents");
+
+	function opentab(tabname){
+		for(tablink of tablinks){
+			tablink.classList.remove("active-link");
+		}
+		for(tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab");
+		}
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabname).classList.add("active-tab");
+	}
+
+</script>
+
+<script>
+
+	var sidemenu = document.getElementById("sidemenu");
+
+	function openmenu(){
+		sidemenu.style.right = "0";
+	}
+	
+	function closemenu(){
+		sidemenu.style.right = "-200px";
+	}
+
+</script>
+
+</body>
+</html>
